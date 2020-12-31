@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addReviewController">
+   <children>
+      <Label fx:id="ratingTitle" layoutX="46.0" layoutY="42.0" text="Add New Review">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reviewField" layoutX="46.0" layoutY="126.0" prefHeight="166.0" prefWidth="321.0" />
+      <Label fx:id="RatingLabel" layoutX="382.0" layoutY="102.0" prefHeight="17.0" prefWidth="104.0" text="Rating" />
+      <TextField fx:id="ratingReviewField" layoutX="382.0" layoutY="126.0" prefHeight="32.0" prefWidth="78.0" />
+      <Label fx:id="ReviewLabel" layoutX="46.0" layoutY="102.0" prefHeight="17.0" prefWidth="104.0" text="Review" />
+      <Button fx:id="saveReviewButton" layoutX="398.0" layoutY="318.0" mnemonicParsing="false" onAction="#addReviewButton" prefHeight="42.0" prefWidth="88.0" text="Save" />
+      <Label fx:id="successAddLabel" layoutX="392.0" layoutY="188.0" prefHeight="32.0" prefWidth="116.0" textFill="#52c93b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="failAddLabel" layoutX="404.0" layoutY="244.0" prefHeight="17.0" prefWidth="104.0" textFill="#d75252">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="descButtonClose" layoutX="289.0" layoutY="318.0" mnemonicParsing="false" onAction="#setaddReviewCloseButton" prefHeight="42.0" prefWidth="78.0" text="Close" />
+   </children>
+</AnchorPane>
